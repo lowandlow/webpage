@@ -1,6 +1,18 @@
-const button= document.getElementById("clickMe");
-const output=document.getElementById("output");
-button.addEventListener("click",() => {
-  output.textContent = "You clicked the button. Why. ";
+const display=document.getElementById("display");
+function appendToDisplay(value){
+  display.value+=value;
 }
+function clearDisplay(){
+  display.value="";
+}
+function deleteLast(){
+  display.value=display.value.slice(0,-1);
+}
+function calculate(){
+  try{
+    display.value= eval(display.value.replace("%","/100"));
+  }
+    catch{
+      display.value="Error";
+    }}
                         )
