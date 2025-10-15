@@ -15,4 +15,3 @@ function calculate(){
     catch{
       display.value="Error";
     }}
-                        )
